@@ -3,6 +3,10 @@ import GeneralInfo from './components/GeneralInfo';
 import EducationExperience from './components/EducationExperience';
 import PracticalExperience from './components/PracticalExperience';
 import Preview from './components/Preview';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import Achievements from './components/Achievements';
+
 import "./styles/App.css"
 
 
@@ -11,6 +15,9 @@ const App = () => {
     generalInfo: { name: '', email: '', phone: '' },
     education: { school: '', degree: '', dates: '' },
     experience: { company: '', title: '', responsibilities: '', Startdate: '', Enddate: '' },
+    skills: { technical: "", soft: "", interests: "" },
+    projects: [],
+    achievements: [],
   });
 
   const handleFormChange = (section, data) => {
@@ -26,6 +33,9 @@ const App = () => {
         <GeneralInfo onChange={handleFormChange} />
         <EducationExperience onChange={handleFormChange} />
         <PracticalExperience onChange={handleFormChange} />
+        <Projects onChange={handleFormChange} />
+        <Skills onChange={handleFormChange}/>
+        <Achievements onChange={handleFormChange} />
       </div>
       <div className="Preview">
         <Preview formData={formData} />

@@ -1,0 +1,23 @@
+  .skills-entry {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85%;
+  }
+  
+  .skills-entry input,
+  .skills-entry textarea {
+    /* width: 100%; */
+    height: 60%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea::placeholder {
+    font-style: italic;
+    color: #888;
+  }
+  

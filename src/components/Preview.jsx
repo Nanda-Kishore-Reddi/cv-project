@@ -43,6 +43,26 @@ const Preview = ({ formData }) => {
         )}
       </div>
 
+      {/* Projects Section */}
+      <div className="projects-section">
+        <h4>Projects</h4>
+        {formData.projects.length > 0 ? (
+          formData.projects.map((proj, index) => (
+            <div key={index} className="project-entry">
+              <p>
+                <strong>{proj.name}</strong> - {proj.tools}
+              </p>
+              <p>{proj.description}</p>
+              <p>
+                ({formatDate(proj.startDate)} to {formatDate(proj.endDate)})
+              </p>
+            </div>
+          ))
+        ) : (
+          <p>No projects information provided.</p>
+        )}
+      </div>
+
       {/* Work Experience Section */}
       <div className="work-experience-section">
         <h4>Work Experience</h4>
@@ -59,6 +79,16 @@ const Preview = ({ formData }) => {
           <p>No work experience provided.</p>
         )}
       </div>
+
+      {/* Skills Section */}
+      <div className="skills-section">
+        <h4>Skills</h4>
+        <p><strong>Technical:</strong> {formData.skills?.technical || "N/A"}</p>
+        <p><strong>Soft:</strong> {formData.skills?.soft || "N/A"}</p>
+        <p><strong>Interests:</strong> {formData.skills?.interests || "N/A"}</p>
+      </div>
+
+
     </div>
   );
 };
