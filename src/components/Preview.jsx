@@ -88,7 +88,23 @@ const Preview = ({ formData }) => {
         <p><strong>Interests:</strong> {formData.skills?.interests || "N/A"}</p>
       </div>
 
-
+       {/* Achievements Section */}
+      <div className="achievements-section">
+        <h4>Achievements</h4>
+        {formData.achievements.length > 0 ? (
+          formData.achievements.map((ach, index) => (
+            <div key={index} className="achievement-entry">
+              <p>
+                <strong>{ach.name}</strong>
+              </p>
+              <p>{ach.description}</p>
+              <p>{formatDate(ach.date)}</p>
+            </div>
+          ))
+        ) : (
+          <p>No achievements information provided.</p>
+        )}
+      </div>
     </div>
   );
 };
