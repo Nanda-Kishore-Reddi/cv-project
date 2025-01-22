@@ -1,0 +1,77 @@
+.preview {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 20px;
+  /* margin-top: 20px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: center;
+}
+
+.preview-section {
+  margin-bottom: 20px;
+}
+
+.preview-section h3 {
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.preview-item {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #007bff;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.preview-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.general-info {
+    justify-items: center;
+}
+
+  
+  .general-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .general-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .education-section,
+  .work-experience-section {
+    margin-top: 20px;
+  }
+  
+  .education-entry,
+  .experience-entry {
+    margin-bottom: 15px;
+  }
+  
+  .education-entry p,
+  .experience-entry p {
+    margin: 5px 0;
+  }
+  
+  .education-section h4,
+  .work-experience-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
